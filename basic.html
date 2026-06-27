@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Basic MVP Proposal | Find Me Gluten Free</title>
+  <meta name="description" content="Basic MVP proposal from Smith Dev for Find Me Gluten Free.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Smith Dev home">
+      <img src="smithdev logo.png" alt="">
+      <span>Smith Dev</span>
+    </a>
+    <nav aria-label="Package pages">
+      <a href="index.html">Compare</a>
+      <a class="active" href="basic.html">Basic</a>
+      <a href="standard.html">Standard</a>
+      <a href="advanced.html">Advanced</a>
+    </nav>
+  </header>
+
+  <main class="proposal">
+    <section class="cover" aria-labelledby="proposal-title">
+      <div class="cover-copy">
+        <div>
+          <p class="eyebrow">Smith Dev</p>
+          <h1 id="proposal-title">Basic MVP Proposal</h1>
+          <p class="summary">A lean first version of the Find Me Gluten Free website focused on paid user access, restaurant and menu content, search, and basic admin content management.</p>
+        </div>
+        <div class="cover-meta" aria-label="Proposal details">
+          <div><span>Prepared For</span><strong>Find Me Gluten Free</strong></div>
+          <div><span>Prepared By</span><strong>Smith Dev</strong></div>
+          <div><span>Estimated Completion</span><strong>October 1, 2026</strong></div>
+        </div>
+      </div>
+      <div class="cover-visual" aria-hidden="true">
+        <div class="brand-panel"><img src="smithdev logo.png" alt=""></div>
+      </div>
+    </section>
+
+    <section class="page" aria-labelledby="overview">
+      <p class="section-kicker">Project Overview</p>
+      <h2 id="overview">Lowest-cost first launch</h2>
+      <p class="lead">The Basic MVP is designed to get the core website online at the lowest project price. It includes the foundation needed for users to create accounts, purchase access, browse gluten-free restaurant/menu information, and for the owner to manage core content from a private admin area.</p>
+      <div class="stats">
+        <div class="stat"><span>Fixed Project Price</span><strong>$7,000</strong></div>
+        <div class="stat"><span>Estimated Time</span><strong>120-180 hours</strong></div>
+        <div class="stat"><span>Package Type</span><strong>Lean MVP</strong></div>
+      </div>
+    </section>
+
+    <section class="page" aria-labelledby="features">
+      <p class="section-kicker">Included Features</p>
+      <h2 id="features">What is included</h2>
+      <ul class="feature-grid">
+        <li><strong>User authentication:</strong> account creation, secure sign-in, email verification, and forgotten password reset.</li>
+        <li><strong>Basic role-based permissions:</strong> access levels for admins, paid users, and general users.</li>
+        <li><strong>Payment access:</strong> subscription or one-time payment processing through Stripe or PayPal.</li>
+        <li><strong>Restaurant and menu pages:</strong> core restaurant/menu content with descriptions, gluten-free status, notes, and basic image support.</li>
+        <li><strong>Search and basic filters:</strong> users can search by park, restaurant, menu item, and basic dining categories.</li>
+        <li><strong>Admin Content Management:</strong> private admin tools for parks, restaurants, menu items, and core website content.</li>
+        <li><strong>Notification email configuration:</strong> setup for automated account emails, including verification and password reset messages.</li>
+        <li><strong>Launch setup:</strong> GitHub setup, domain setup through GoDaddy or Cloudflare, hosting setup, and production launch.</li>
+      </ul>
+    </section>
+
+    <section class="page" aria-labelledby="admin">
+      <p class="section-kicker">Admin Content Management</p>
+      <h2 id="admin">Basic admin tools</h2>
+      <ul class="scope-list">
+        <li><strong>Park Management:</strong> create and edit park records.</li>
+        <li><strong>Restaurant Management:</strong> create, edit, archive, and manage restaurant information.</li>
+        <li><strong>Menu Management:</strong> create, edit, archive, and organize menu items by restaurant and meal type.</li>
+        <li><strong>User Access Management:</strong> manage basic user access and paid-access status.</li>
+        <li><strong>Account Email Settings:</strong> configure the sending email used for account verification and password reset emails.</li>
+      </ul>
+    </section>
+
+    <section class="page" aria-labelledby="stack">
+      <p class="section-kicker">Services and Technical Stack</p>
+      <h2 id="stack">Actual tools and services included</h2>
+      <table class="technical-table">
+        <thead><tr><th scope="col">Part of the Project</th><th scope="col">Planned Tool or Service</th><th scope="col">What This Means</th></tr></thead>
+        <tbody>
+          <tr><td>Guest website</td><td>TypeScript React application</td><td>The public website users browse after visiting the domain.</td></tr>
+          <tr><td>Website logic and secure data handling</td><td>ASP.NET Core Web API</td><td>The backend service for accounts, payments, restaurant content, and admin tools.</td></tr>
+          <tr><td>Information storage</td><td>MySQL</td><td>Storage for users, payments, parks, restaurants, and menu items.</td></tr>
+          <tr><td>Photo storage</td><td>AWS S3 or Azure Blob Storage</td><td>Cloud storage for basic restaurant/menu images.</td></tr>
+          <tr><td>Project file storage</td><td>GitHub</td><td>Professional project storage and version tracking.</td></tr>
+          <tr><td>Hosting and domain</td><td>Azure or AWS; GoDaddy or Cloudflare</td><td>Services used to host the website and connect the domain.</td></tr>
+          <tr><td>Payment processing</td><td>Stripe or PayPal</td><td>Secure subscription or one-time payment processing.</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="page" aria-labelledby="effort">
+      <p class="section-kicker">Estimated Time</p>
+      <h2 id="effort">Where the work will go</h2>
+      <table>
+        <tbody>
+          <tr><td>Account access, permissions, payment access, and automated emails</td><td>28-42 hours</td></tr>
+          <tr><td>Restaurant, menu, search, and basic filter features</td><td>34-52 hours</td></tr>
+          <tr><td>Basic Admin Content Management</td><td>28-42 hours</td></tr>
+          <tr><td>Responsive design, basic artwork, testing, and launch setup</td><td>30-44 hours</td></tr>
+          <tr class="total-row"><td><strong>Total Estimated Time</strong></td><td><strong>120-180 hours</strong></td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="page" aria-labelledby="investment">
+      <p class="section-kicker">Project Investment</p>
+      <h2 id="investment">Fixed-price Basic MVP build</h2>
+      <div class="price-band"><div><p>Fixed Project Price</p><strong>Includes planning, design, development, testing, launch, and project management for the Basic MVP scope.</strong></div><div class="price">$7,000</div></div>
+    </section>
+
+    <section class="page" aria-labelledby="payment">
+      <p class="section-kicker">Payment Schedule</p>
+      <h2 id="payment">Milestone-based payment terms</h2>
+      <div class="payment">
+        <div class="payment-step"><span>Kickoff</span><strong>35% - $2,450</strong><p>Due prior to project kickoff.</p></div>
+        <div class="payment-step"><span>Halfway Milestone</span><strong>35% - $2,450</strong><p>Due at the halfway project milestone.</p></div>
+        <div class="payment-step"><span>Final Delivery</span><strong>30% - $2,100</strong><p>Due upon final delivery and website launch for the client.</p></div>
+      </div>
+    </section>
+
+    <section class="page" aria-labelledby="ongoing-costs">
+      <p class="section-kicker">Additional Ongoing Costs Beyond Contract</p>
+      <h2 id="ongoing-costs">Estimated third-party costs after launch</h2>
+      <p class="lead">Third-party costs usually start near the lower end and increase as more users use the app, more photos are uploaded, more emails are sent, and more data is stored.</p>
+      <table>
+        <tbody>
+          <tr><td>Website hosting and database</td><td>$25-$100 per month to start</td><td>Paid to Azure or AWS.</td></tr>
+          <tr><td>Photo storage</td><td>$1-$10 per month to start</td><td>Depends on stored images.</td></tr>
+          <tr><td>Domain name</td><td>$10-$25 per year for many standard domains</td><td>Paid to GoDaddy or Cloudflare.</td></tr>
+          <tr><td>Notification email sending</td><td>$5-$20 per month to start</td><td>Depends on email volume.</td></tr>
+          <tr><td>Payment processing</td><td>Usually a percentage plus a small transaction fee</td><td>Stripe and PayPal fees vary by transaction type.</td></tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+</body>
+</html>

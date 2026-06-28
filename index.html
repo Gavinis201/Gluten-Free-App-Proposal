@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Custom Interactive Website Proposal | Smith Dev</title>
   <meta name="description" content="Custom interactive website proposal options for the client project.">
+  <script src="proposal-auth.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="stylesheet" href="styles.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./smithdev logo.png">
@@ -26,6 +27,7 @@
         <button class="settings-button" type="button" aria-label="Open site options" aria-haspopup="true"><i class="fa-solid fa-gear" aria-hidden="true"></i></button>
         <div class="settings-dropdown">
           <a href="contact.html">Contact</a>
+          <a href="login.html" data-logout>Log Out</a>
         </div>
       </div>
     </nav>
@@ -39,7 +41,6 @@
         <h1>Custom Interactive Website Proposal</h1>
         <p class="hero-copy">Three build options for a gluten-free and celiac-friendly Disneyland dining website. This proposal is for a responsive web application that runs in a web browser on desktop, tablet, and mobile devices.</p>
         <div class="hero-meta">
-          <div><span>Prepared for</span><strong>The Website</strong></div>
           <div class="mobile-hide"><span>Prepared by</span><strong>Smith Dev</strong></div>
           <div><span>Estimated completion</span><strong>By October 2026</strong></div>
         </div>
@@ -62,7 +63,7 @@
           <a class="plan-button" href="starter.html">View details</a>
           <ul class="feature-list">
             <li>Account access, payment setup, and admin/user permissions</li>
-            <li>Interactive Disneyland map with gluten-free restaurant locations</li>
+            <li>Static Disneyland map browsing with gluten-free restaurant locations</li>
             <li>Restaurant detail pages and food item database</li>
             <li>Search and filters for parks, restaurants, and food items</li>
             <li>Administrative content management for parks, restaurants, and menu items</li>
@@ -84,10 +85,10 @@
             <li>Custom uploaded park maps with editable restaurant pins</li>
             <li>Location, nearby restaurants, and approximate walking distance when permission is granted</li>
             <li>Get Directions button that opens Google Maps or Apple Maps</li>
-            <li>Custom Content Management System (CMS) with complete control over parks, maps, restaurant pins, menu items, reviews, contributor approvals, permissions, and community updates</li>
+            <li>Custom owner/admin management tools for parks, maps, restaurant pins, menu items, reviews, contributor approvals, permissions, and community updates</li>
             <li>Contributor approval questions from Anna before users can review or upload images</li>
             <li>Reviews, photo uploads, favorites, recently viewed items, and community update approvals</li>
-            <li>Subscription management, paid member access, user permissions, and automated account emails</li>
+            <li>Subscription management, paid member access, user permissions, and payment setup</li>
           </ul>
         </article>
 
@@ -96,7 +97,7 @@
           <div class="plan-top">
             <p class="plan-name">Advanced Build</p>
           </div>
-          <div class="plan-price">$12,500</div>
+          <div class="plan-price">$14,000</div>
           <p class="plan-note">Best for a more automated website with premium user experience and owner insight features.</p>
           <a class="plan-button" href="advanced.html">View details</a>
           <ul class="feature-list">
@@ -147,7 +148,7 @@
       <div class="compare-plans" aria-label="Package prices">
         <a href="starter.html"><span>Lean Build</span><strong>$7,000</strong></a>
         <a href="standard.html"><span>Standard Build</span><strong>$8,500</strong></a>
-        <a href="advanced.html"><span>Advanced Build</span><strong>$12,500</strong></a>
+        <a href="advanced.html"><span>Advanced Build</span><strong>$14,000</strong></a>
       </div>
 
       <details class="matrix-group" open>
@@ -214,9 +215,8 @@
               <tr><th scope="row">User accounts: create account, sign in, and access paid content.</th><td><i class="yes">Yes</i></td><td><i class="yes">Yes</i></td><td><i class="yes">Yes</i></td></tr>
               <tr><th scope="row">User account settings: change password and delete account.</th><td><i class="yes">Yes</i></td><td><i class="yes">Yes</i></td><td><i class="yes">Yes</i></td></tr>
               <tr><th scope="row">Verification and forgotten-password emails.</th><td><i class="yes">Yes</i></td><td><i class="yes">Yes</i></td><td><i class="yes">Yes</i></td></tr>
-              <tr><th scope="row">Notification email provider setup.</th><td><i class="yes">Yes</i></td><td><i class="yes">Yes</i></td><td><i class="yes">Yes</i></td></tr>
               <tr><th scope="row">Stripe or PayPal subscription/one-time payment access.</th><td><i class="yes">Yes</i></td><td><i class="yes">Yes</i></td><td><i class="yes">Yes</i></td></tr>
-              <tr><th scope="row">Lean Build admin and user permissions.</th><td><i class="yes">Yes</i></td><td><i class="yes">Yes</i></td><td><i class="yes">Yes</i></td></tr>
+              <tr><th scope="row">Basic user roles: owner/admin access and paid user access.</th><td><i class="yes">Yes</i></td><td><i class="yes">Yes</i></td><td><i class="yes">Yes</i></td></tr>
               <tr><th scope="row">Google Sign-In, Apple Sign-In, and multi-factor authentication.</th><td><i class="no">No</i></td><td><i class="no">No</i></td><td><i class="yes">Yes</i></td></tr>
             </tbody>
           </table>
@@ -245,13 +245,12 @@
         <div class="table-wrap">
           <table class="feature-matrix">
             <tbody>
-              <tr><th scope="row">Lean Build map browsing: show restaurant locations and gluten-free foods available.</th><td><i class="yes">Yes</i></td><td><i class="yes">Yes</i></td><td><i class="yes">Yes</i></td></tr>
+              <tr><th scope="row">Static map browsing: show restaurant locations and gluten-free foods available, without live user location.</th><td><i class="yes">Yes</i></td><td><i class="yes">Yes</i></td><td><i class="yes">Yes</i></td></tr>
               <tr><th scope="row">Custom uploaded park map with editable restaurant pins.</th><td><i class="no">No</i></td><td><i class="yes">Yes</i></td><td><i class="yes">Yes</i></td></tr>
               <tr><th scope="row">Restaurant latitude and longitude stored for location services.</th><td><i class="no">No</i></td><td><i class="yes">Yes</i></td><td><i class="yes">Yes</i></td></tr>
-              <tr><th scope="row">Visitor phone location, nearby restaurants, and approximate walking distance.</th><td><i class="no">No</i></td><td><i class="yes">Yes</i></td><td><i class="yes">Yes</i></td></tr>
+              <tr><th scope="row">Live map user location, nearby restaurants, and approximate walking distance.</th><td><i class="no">No</i></td><td><i class="yes">Yes</i></td><td><i class="yes">Yes</i></td></tr>
               <tr><th scope="row">Get Directions button opens Google Maps or Apple Maps for turn-by-turn directions.</th><td><i class="no">No</i></td><td><i class="yes">Yes</i></td><td><i class="yes">Yes</i></td></tr>
               <tr><th scope="row">Admin tools for restaurant and food-location map points.</th><td><i class="yes">Yes</i></td><td><i class="yes">Yes</i></td><td><i class="yes">Yes</i></td></tr>
-              <tr><th scope="row">Premium map interaction and visual polish.</th><td><i class="no">No</i></td><td><i class="no">No</i></td><td><i class="yes">Yes</i></td></tr>
             </tbody>
           </table>
         </div>

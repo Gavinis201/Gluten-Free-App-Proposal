@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Advanced Build Proposal | Website</title>
   <meta name="description" content="Advanced Build proposal from Smith Dev for the website.">
+  <script src="proposal-auth.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="stylesheet" href="styles.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./smithdev logo.png">
@@ -25,6 +26,7 @@
         <button class="settings-button" type="button" aria-label="Open site options" aria-haspopup="true"><i class="fa-solid fa-gear" aria-hidden="true"></i></button>
         <div class="settings-dropdown">
           <a href="contact.html">Contact</a>
+          <a href="login.html" data-logout>Log Out</a>
         </div>
       </div>
     </nav>
@@ -40,7 +42,6 @@
           <p class="summary">A premium version of the responsive website with the full Standard Build scope plus AI guidance, advanced admin reporting, enhanced moderation, Mailchimp campaigns, and expanded visual polish.</p>
         </div>
         <div class="cover-meta" aria-label="Proposal details">
-          <div><span>Prepared For</span><strong>The Website</strong></div>
           <div><span>Prepared By</span><strong>Smith Dev</strong></div>
           <div><span>Estimated Completion</span><strong>By October 2026*</strong></div>
         </div>
@@ -51,9 +52,9 @@
     <section class="page" aria-labelledby="overview">
       <p class="section-kicker">Project Overview</p>
       <h2 id="overview">Advanced Build With Premium Features</h2>
-      <p class="lead">The Advanced Build package includes everything in Standard Build and adds premium features that are helpful for a more mature responsive web application: an AI chatbot, Mailchimp email campaign setup, richer admin dashboard views, advanced reporting, enhanced moderation workflows, and expanded user interface polish.</p>
+      <p class="lead">The Advanced Build package includes everything in Standard Build and adds premium features that are helpful for a more mature responsive web application: an AI chatbot, AI guidance controls, Mailchimp campaigns, richer admin dashboard views, restaurant popularity insights, search analytics, reporting exports, enhanced moderation workflows, and expanded user interface polish.</p>
       <div class="stats">
-        <div class="stat"><span>Fixed Project Price</span><strong>$12,500</strong></div>
+        <div class="stat"><span>Fixed Project Price</span><strong>$14,000</strong></div>
         <div class="stat"><span>Package Type</span><strong>Advanced Build</strong></div>
       </div>
     </section>
@@ -65,8 +66,8 @@
         <li><strong>User authentication:</strong> account creation, secure sign-in, email verification, and forgotten password reset.</li>
         <li><strong>User settings page:</strong> users can change their password or delete their account.</li>
         <li><strong>Role-based permissions:</strong> access levels for admins, approved contributors, paid users, and general users.</li>
-        <li><strong>Subscription management:</strong> paid member access, user permissions, subscription or one-time payment processing, and automated account emails.</li>
-        <li><strong>Custom Content Management System (CMS):</strong> complete control over parks, maps, restaurant pins, menu items, reviews, contributor approvals, permissions, and community updates.</li>
+        <li><strong>Subscription management:</strong> paid member access, user permissions, and subscription or one-time payment processing.</li>
+        <li><strong>Custom owner/admin management tools:</strong> complete control over parks, maps, restaurant pins, menu items, reviews, contributor approvals, permissions, and community updates.</li>
         <li><strong>Map and direction features:</strong> custom uploaded park maps with editable restaurant pins, stored latitude/longitude coordinates, visitor phone location when permission is granted, nearby restaurant results, approximate walking distance, and a Get Directions button that opens Google Maps or Apple Maps.</li>
         <li><strong>Restaurant pages:</strong> restaurant descriptions, hours, distance context, mobile ordering status, dedicated fryer indicator, allergy accommodation notes, and photo galleries.</li>
         <li><strong>Menu item pages:</strong> item descriptions, ingredients, cross-contamination notes, meal category, gluten-free status, pricing, and multiple images.</li>
@@ -76,16 +77,16 @@
         <li><strong>Reviews and photo uploads:</strong> approved contributors can leave ratings, write reviews, upload images, and share gluten-free/celiac context.</li>
         <li><strong>Community updates:</strong> users can submit restaurant updates, suggest menu changes, report unavailable menu items, upload photos, and share allergy accommodation experiences for admin approval.</li>
         <li><strong>AI chatbot:</strong> guided answers for gluten-free dining questions, frequently asked questions, and site navigation support.</li>
+        <li><strong>Advanced sign-in options:</strong> Google Sign-In, Apple Sign-In, and multi-factor authentication.</li>
         <li><strong>Mailchimp email campaigns:</strong> setup for owner-managed newsletters, announcements, news, and updates that can be sent to registered users.</li>
         <li><strong>Advanced admin dashboard views:</strong> clearer visibility into contributor activity, review status, community updates, content health, and pending approvals.</li>
-        <li><strong>Enhanced moderation workflow:</strong> stronger review, photo, contributor approval, and suggested update management.</li>
-        <li><strong>Advanced reporting exports:</strong> reports for restaurants, menu status, review activity, user contributions, and community update trends.</li>
+        <li><strong>AI-assisted moderation workflow:</strong> stronger review, photo, contributor approval, suggested update management, and advanced review statuses.</li>
+        <li><strong>Advanced analytics and reporting:</strong> restaurant popularity, search analytics, reporting exports, admin activity logs, menu status, review activity, user contributions, and community update trends.</li>
         <li><strong>Enhanced map and restaurant detail experience:</strong> more polished layouts and richer browsing experience.</li>
         <li><strong>Premium discovery sections:</strong> Recently Added, Trending Restaurants, and admin activity logs.</li>
-        <li><strong>Notification email configuration:</strong> setup for automated account emails, including verification and password reset messages.</li>
         <li><strong>Premium mobile-first responsive design:</strong> refined phone, tablet, and desktop browser layouts for guests navigating the Disneyland Resort.</li>
         <li><strong>Premium artwork and interface polish:</strong> expanded artwork, icons, visual assets, and refined user experience details.</li>
-        <li><strong>Launch setup:</strong> GitHub setup, domain setup through GoDaddy or Cloudflare, hosting setup, and production launch.</li>
+        <li><strong>Project setup and launch services:</strong> scope planning, design approval, GitHub setup, domain setup through GoDaddy or Cloudflare, hosting setup, final testing, and production launch.</li>
         <li><strong>Priority refinement:</strong> additional testing, refinement, and launch preparation for the larger feature set.</li>
       </ul>
     </section>
@@ -94,10 +95,10 @@
       <p class="section-kicker">Private Owner Tools</p>
       <h2 id="admin">Advanced Build Admin Management Tools</h2>
       <ul class="scope-list">
-        <li><strong>Full Standard Build Admin Management Tools:</strong> parks, maps, restaurant pins, restaurants, menus, reviews, photos, permissions, account emails, contributor approvals, and community updates.</li>
+        <li><strong>Full Standard Build Admin Management Tools:</strong> parks, maps, restaurant pins, restaurants, menus, reviews, photos, permissions, contributor approvals, and community updates.</li>
         <li><strong>Admin Dashboard Views:</strong> dashboard summaries for pending approvals, recent reviews, photo activity, community submissions, and content status.</li>
-        <li><strong>Reporting Tools:</strong> exportable or structured reports for menu status, restaurant coverage, review activity, and contributor submissions.</li>
-        <li><strong>Enhanced Moderation:</strong> more detailed queues and statuses for reviews, images, contributor approvals, and suggested content updates.</li>
+        <li><strong>Analytics and Reporting Tools:</strong> restaurant popularity, search analytics, reporting exports, admin logs, menu status, restaurant coverage, review activity, and contributor submissions.</li>
+        <li><strong>AI-Assisted Moderation:</strong> more detailed queues and statuses for reviews, images, contributor approvals, and suggested content updates.</li>
         <li><strong>AI Chatbot Content Controls:</strong> admin-managed guidance content, approved answer sources, and chatbot review/refinement support.</li>
       </ul>
     </section>
@@ -126,16 +127,16 @@
     <section class="page" aria-labelledby="investment">
       <p class="section-kicker">Project Investment</p>
       <h2 id="investment">Fixed-Price Advanced Build</h2>
-      <div class="price-band"><div><p>Fixed Project Price</p><strong>Includes planning, design approval, development, AI feature integration, testing, launch, and project management for the Advanced Build scope.</strong></div><div class="price">$12,500</div></div>
+      <div class="price-band"><div><p>Fixed Project Price</p><strong>Includes planning, design approval, development, AI feature integration, testing, launch, and project management for the Advanced Build scope.</strong></div><div class="price">$14,000</div></div>
     </section>
 
     <section class="page" aria-labelledby="payment">
       <p class="section-kicker">Payment Schedule</p>
       <h2 id="payment">Milestone-Based Payment Terms</h2>
       <div class="payment">
-        <div class="payment-step"><span>Kickoff</span><strong>35% - $4,375</strong><p>Due prior to project kickoff.</p></div>
-        <div class="payment-step"><span>Halfway Milestone</span><strong>35% - $4,375</strong><p>Due at the halfway project milestone.</p></div>
-        <div class="payment-step"><span>Final Delivery</span><strong>30% - $3,750</strong><p>Due upon final delivery and website launch for the client.</p></div>
+        <div class="payment-step"><span>Kickoff</span><strong>35% - $4,900</strong><p>Due prior to project kickoff.</p></div>
+        <div class="payment-step"><span>Halfway Milestone</span><strong>35% - $4,900</strong><p>Due at the halfway project milestone.</p></div>
+        <div class="payment-step"><span>Final Delivery</span><strong>30% - $4,200</strong><p>Due upon final delivery and website launch for the client.</p></div>
       </div>
       <div class="payment-note">
         <strong>Expectations After Completion</strong>

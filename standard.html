@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Standard Build Proposal | Website</title>
   <meta name="description" content="Standard Build production-ready proposal from Smith Dev for the website.">
+  <script src="proposal-auth.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="stylesheet" href="styles.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./smithdev logo.png">
@@ -25,6 +26,7 @@
         <button class="settings-button" type="button" aria-label="Open site options" aria-haspopup="true"><i class="fa-solid fa-gear" aria-hidden="true"></i></button>
         <div class="settings-dropdown">
           <a href="contact.html">Contact</a>
+          <a href="login.html" data-logout>Log Out</a>
         </div>
       </div>
     </nav>
@@ -37,12 +39,11 @@
         <div>
           <p class="eyebrow">Smith Dev</p>
           <h1 id="proposal-title">Standard Build Proposal</h1>
-          <p class="summary">The recommended production-ready responsive website centered around a custom content management system with owner control over parks, maps, restaurant pins, menu items, reviews, contributor approvals, permissions, and community updates.</p>
+          <p class="summary">The recommended production-ready responsive website centered around custom owner/admin management tools for parks, maps, restaurant pins, menu items, reviews, contributor approvals, permissions, and community updates.</p>
         </div>
         <div class="cover-meta" aria-label="Proposal details">
-          <div><span>Prepared For</span><strong>The Website</strong></div>
           <div><span>Prepared By</span><strong>Smith Dev</strong></div>
-          <div><span>Estimated Completion</span><strong>By October 2026*</strong></div>
+          <div><span>Estimated Completion</span><strong>By October 2026</strong></div>
         </div>
       </div>
       <div class="cover-visual" aria-hidden="true"><div class="brand-panel"><img src="smithdev logo.png" alt=""></div></div>
@@ -51,7 +52,7 @@
     <section class="page" aria-labelledby="overview">
       <p class="section-kicker">Project Overview</p>
       <h2 id="overview">Recommended Production-Ready Website</h2>
-      <p class="lead">The Standard Build package is a complete production-ready responsive web application centered around a custom content management system designed specifically for managing gluten-free dining throughout the Disneyland Resort, including parks, maps, restaurant pins, menu items, reviews, contributor approvals, permissions, and community updates.</p>
+      <p class="lead">The Standard Build package is a complete production-ready responsive web application centered around custom owner/admin management tools for gluten-free dining throughout the Disneyland Resort, including parks, maps, restaurant pins, menu items, reviews, contributor approvals, permissions, community updates, phone location support, walking-distance context, and directions through Google Maps or Apple Maps.</p>
       <div class="stats">
         <div class="stat"><span>Fixed Project Price</span><strong>$8,500</strong></div>
         <div class="stat"><span>Package Type</span><strong>Standard Build</strong></div>
@@ -65,8 +66,8 @@
         <li><strong>User authentication:</strong> account creation, secure sign-in, email verification, and forgotten password reset.</li>
         <li><strong>User settings page:</strong> users can change their password or delete their account.</li>
         <li><strong>Role-based permissions:</strong> access levels for admins, approved contributors, paid users, and general users.</li>
-        <li><strong>Subscription management:</strong> paid member access, user permissions, subscription or one-time payment processing, and automated account emails.</li>
-        <li><strong>Custom Content Management System (CMS):</strong> complete control over parks, maps, restaurant pins, menu items, reviews, contributor approvals, permissions, and community updates.</li>
+        <li><strong>Subscription management:</strong> paid member access, user permissions, and subscription or one-time payment processing.</li>
+        <li><strong>Custom owner/admin management tools:</strong> complete control over parks, maps, restaurant pins, menu items, reviews, contributor approvals, permissions, and community updates.</li>
         <li><strong>Map and direction features:</strong> custom uploaded park maps with editable restaurant pins, stored latitude/longitude coordinates, visitor phone location when permission is granted, nearby restaurant results, approximate walking distance, and a Get Directions button that opens Google Maps or Apple Maps.</li>
         <li><strong>Restaurant pages:</strong> restaurant descriptions, hours, distance context, mobile ordering status, dedicated fryer indicator, allergy accommodation notes, and photo galleries.</li>
         <li><strong>Menu item pages:</strong> item descriptions, ingredients, cross-contamination notes, meal category, gluten-free status, pricing, and multiple images.</li>
@@ -75,10 +76,9 @@
         <li><strong>Saved activity:</strong> users can save favorite restaurants, save favorite menu items, and quickly return to recently viewed content.</li>
         <li><strong>Reviews and photo uploads:</strong> approved contributors can leave ratings, write reviews, upload images, and share gluten-free/celiac context.</li>
         <li><strong>Community updates:</strong> users can submit restaurant updates, suggest menu changes, report unavailable menu items, upload photos, and share allergy accommodation experiences for admin approval.</li>
-        <li><strong>Notification email configuration:</strong> setup for automated account emails, including verification and password reset messages.</li>
         <li><strong>Mobile-first responsive design:</strong> polished layouts for guests using phone, tablet, and desktop browsers while navigating the Disneyland Resort.</li>
         <li><strong>Artwork and icons:</strong> custom visual assets and interface polish for the production-ready website.</li>
-        <li><strong>Launch setup:</strong> GitHub setup, domain setup through GoDaddy or Cloudflare, hosting setup, and production launch.</li>
+        <li><strong>Project setup and launch services:</strong> scope planning, design approval, GitHub setup, domain setup through GoDaddy or Cloudflare, hosting setup, final testing, and production launch.</li>
       </ul>
     </section>
 
@@ -86,7 +86,7 @@
       <p class="section-kicker">Private Owner Tools</p>
       <h2 id="admin">Standard Build Admin Management Tools</h2>
       <ul class="scope-list">
-        <li><strong>Custom Content Management System (CMS):</strong> complete control over parks, maps, restaurant pins, menu items, reviews, contributor approvals, permissions, and community updates.</li>
+        <li><strong>Custom owner/admin management tools:</strong> complete control over parks, maps, restaurant pins, menu items, reviews, contributor approvals, permissions, and community updates.</li>
         <li><strong>Purpose-built admin portal:</strong> a custom private owner area built specifically for the website, rather than a generic template.</li>
         <li><strong>Park Management:</strong> create, edit, delete, reorder, and upload park maps.</li>
         <li><strong>Map Management:</strong> place, move, edit, and remove restaurant pins visually on uploaded maps.</li>
@@ -96,7 +96,6 @@
         <li><strong>Reviewer Verification Management:</strong> review answers to Anna's onboarding questions, approve contributors, deny contributors, and revoke contributor permissions.</li>
         <li><strong>Permissions Management:</strong> manage which users can access admin management tools, paid content, review posting, image uploads, and contributor-only features.</li>
         <li><strong>Community Update Management:</strong> approve or reject suggested changes before they appear publicly.</li>
-        <li><strong>Account Email Settings:</strong> configure the email address used for account verification and forgotten password messages.</li>
       </ul>
     </section>
 

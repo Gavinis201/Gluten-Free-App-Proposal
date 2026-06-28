@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Lean Build Proposal | Website</title>
   <meta name="description" content="Lean Build proposal from Smith Dev for the website.">
+  <script src="proposal-auth.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="stylesheet" href="styles.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./smithdev logo.png">
@@ -25,6 +26,7 @@
         <button class="settings-button" type="button" aria-label="Open site options" aria-haspopup="true"><i class="fa-solid fa-gear" aria-hidden="true"></i></button>
         <div class="settings-dropdown">
           <a href="contact.html">Contact</a>
+          <a href="login.html" data-logout>Log Out</a>
         </div>
       </div>
     </nav>
@@ -40,9 +42,8 @@
           <p class="summary">A lean first version of the responsive website focused on the core Disneyland map, restaurant details, gluten-free food item database, search, filters, paid access, and administrative content management.</p>
         </div>
         <div class="cover-meta" aria-label="Proposal details">
-          <div><span>Prepared For</span><strong>The Website</strong></div>
           <div><span>Prepared By</span><strong>Smith Dev</strong></div>
-          <div><span>Estimated Completion</span><strong>By October 2026*</strong></div>
+          <div><span>Estimated Completion</span><strong>By October 2026</strong></div>
         </div>
       </div>
       <div class="cover-visual" aria-hidden="true">
@@ -53,7 +54,7 @@
     <section class="page" aria-labelledby="overview">
       <p class="section-kicker">Project Overview</p>
       <h2 id="overview">Lowest-Cost First Launch</h2>
-      <p class="lead">The Lean Build package is designed to launch the core informational website experience at the lowest project price. It includes a Disneyland-focused gluten-free map, restaurant detail pages, a food item database, search and filters, paid user access, and administrative content management for parks, restaurants, and menu items.</p>
+      <p class="lead">The Lean Build package is designed to launch the core informational website experience at the lowest project price. It includes planning, design approval, a Disneyland-focused gluten-free map, restaurant detail pages, a food item database, search and filters, paid user access, owner/admin content tools, responsive design, testing, and launch setup.</p>
       <div class="stats">
         <div class="stat"><span>Fixed Project Price</span><strong>$7,000</strong></div>
         <div class="stat"><span>Package Type</span><strong>Lean Build</strong></div>
@@ -66,18 +67,17 @@
       <ul class="feature-grid">
         <li><strong>User authentication:</strong> account creation, secure sign-in, email verification, and forgotten password reset.</li>
         <li><strong>User settings page:</strong> users can change their password or delete their account.</li>
-        <li><strong>Lean Build permissions:</strong> two access levels: admin and user.</li>
+        <li><strong>Basic user roles:</strong> owner/admin access for managing the website, and user access for viewing paid website content.</li>
         <li><strong>Payment access:</strong> subscription or one-time payment processing through Stripe or PayPal.</li>
-        <li><strong>Interactive Disneyland map:</strong> map-based browsing for restaurants, food carts, snack stands, and quick-service locations offering gluten-free options.</li>
+        <li><strong>Static Disneyland map:</strong> map-based browsing for restaurants, food carts, snack stands, and quick-service locations offering gluten-free options. This does not include live user location, nearby restaurant detection, walking distance, or turn-by-turn directions.</li>
         <li><strong>Location filters:</strong> users can filter by Disneyland Park, Disney California Adventure, Downtown Disney, and hotels.</li>
-        <li><strong>Restaurant detail pages:</strong> restaurant description, hours, gluten-free menu items, allergy notes, prices, and dedicated fryer indicator.</li>
+        <li><strong>Restaurant detail pages:</strong> restaurant description, hours, category, gluten-free options, allergy notes, mobile ordering status, prices, and dedicated fryer indicator.</li>
         <li><strong>Food item database:</strong> food item name, description, price, gluten-free status, cross-contamination notes, and dedicated fryer status.</li>
         <li><strong>Search and filters:</strong> users can search by park, restaurant, menu item, meal type, dedicated fryer, mobile ordering, and gluten-free status.</li>
         <li><strong>Administrative content management:</strong> private admin management tools for users, permissions, parks, map locations, restaurants, menu items, descriptions, and core website content.</li>
         <li><strong>Mobile-first responsive design:</strong> layouts built for guests using phone, tablet, and desktop browsers while navigating the Disneyland Resort.</li>
         <li><strong>Lean Build artwork and icons:</strong> basic visual assets and interface polish for the first launch.</li>
-        <li><strong>Notification email configuration:</strong> setup for automated account emails, including verification and password reset messages.</li>
-        <li><strong>Launch setup:</strong> GitHub setup, domain setup through GoDaddy or Cloudflare, hosting setup, and production launch.</li>
+        <li><strong>Project setup and launch services:</strong> scope planning, design approval, GitHub setup, domain setup through GoDaddy or Cloudflare, hosting setup, final testing, and production launch.</li>
       </ul>
     </section>
 
@@ -90,7 +90,6 @@
         <li><strong>Restaurant Management:</strong> create, edit, archive, and manage restaurant information.</li>
         <li><strong>Menu Management:</strong> create, edit, archive, and organize menu items by restaurant and meal type.</li>
         <li><strong>User Access Management:</strong> manage users and assign either admin or user access.</li>
-        <li><strong>Account Email Settings:</strong> configure the sending email used for account verification and password reset emails.</li>
       </ul>
     </section>
 

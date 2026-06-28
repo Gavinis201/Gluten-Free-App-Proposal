@@ -1164,7 +1164,7 @@ tbody tr:nth-child(even) td {
   }
 
   .brand span {
-    font-size: 1.35rem;
+    font-size: 1.5rem;
   }
 
   nav {
@@ -1270,6 +1270,15 @@ tbody tr:nth-child(even) td {
     padding: 22px;
   }
 
+  .hero {
+    width: 100%;
+    min-height: 460px;
+    margin: 18px auto 18px;
+    padding: 30px 24px;
+    overflow: hidden;
+    border-radius: 8px;
+  }
+
   main {
     width: min(100% - 24px, 1180px);
   }
@@ -1352,6 +1361,42 @@ tbody tr:nth-child(even) td {
     padding-right: 0;
   }
 
+  .hero h1 {
+    max-width: 9ch;
+    font-size: clamp(3rem, 11vw, 4.35rem);
+  }
+
+  .hero .hero-copy {
+    max-width: 36rem;
+    margin-top: 18px;
+  }
+
+  .hero .hero-meta {
+    display: grid;
+    gap: 0;
+    margin-top: 28px;
+    padding-top: 18px;
+    border-top: 1px solid rgba(255, 255, 255, 0.28);
+  }
+
+  .hero .hero-meta div {
+    width: auto;
+    min-width: 0;
+    padding: 10px 0;
+    color: #ffffff;
+    background: transparent;
+    border: 0;
+    border-radius: 0;
+  }
+
+  .hero .hero-meta span {
+    color: rgba(255, 255, 255, 0.72);
+  }
+
+  .hero .hero-meta strong {
+    color: #ffffff;
+  }
+
   .pdf-button {
     display: none;
   }
@@ -1370,7 +1415,108 @@ tbody tr:nth-child(even) td {
   }
 
   .compare-plans {
-    grid-template-columns: 1fr;
+    position: sticky;
+    top: 65px;
+    z-index: 8;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 4px;
+    margin: 0 -10px 16px;
+    padding: 8px;
+    background: rgba(238, 243, 244, 0.98);
+    border-bottom: 1px solid var(--line);
+  }
+
+  .compare-plans a {
+    min-height: 72px;
+    padding: 11px 6px;
+    border-radius: 6px;
+  }
+
+  .compare-plans span {
+    font-size: 0.76rem;
+    line-height: 1.2;
+  }
+
+  .compare-plans strong {
+    margin-top: 5px;
+    font-size: 0.94rem;
+    line-height: 1.1;
+  }
+
+  .feature-compare .table-wrap {
+    overflow-x: visible;
+  }
+
+  .feature-matrix,
+  .feature-matrix tbody,
+  .feature-matrix tr,
+  .feature-matrix th,
+  .feature-matrix td {
+    display: block;
+    width: 100%;
+  }
+
+  .feature-matrix {
+    min-width: 0;
+    border: 0;
+    background: transparent;
+  }
+
+  .feature-matrix tr {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 0;
+    margin-bottom: 0;
+    background: #ffffff;
+    border: 1px solid var(--line);
+    border-bottom: 0;
+    border-radius: 0;
+    overflow: hidden;
+  }
+
+  .feature-matrix tr:first-child {
+    border-radius: 8px 8px 0 0;
+  }
+
+  .feature-matrix tr:last-child {
+    border-bottom: 1px solid var(--line);
+    border-radius: 0 0 8px 8px;
+  }
+
+  .feature-matrix th {
+    grid-column: 1 / -1;
+    width: 100%;
+    padding: 10px 10px 8px;
+    background: #ffffff;
+    border-bottom: 0;
+    font-size: 0.88rem;
+    line-height: 1.35;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+
+  .feature-matrix td {
+    display: grid;
+    min-height: 46px;
+    place-items: center;
+    width: 100%;
+    padding: 8px;
+    background: var(--wash);
+    border-right: 1px solid var(--line);
+    border-bottom: 0;
+  }
+
+  .feature-matrix td:last-child {
+    border-right: 0;
+  }
+
+  .feature-matrix tbody tr:nth-child(even) td,
+  .feature-matrix tbody tr:nth-child(even) th {
+    background: initial;
+  }
+
+  .feature-matrix tbody tr:nth-child(even) td {
+    background: var(--wash);
   }
 
   .payment {
@@ -1430,13 +1576,18 @@ tbody tr:nth-child(even) td {
     inset: 59px 0 0;
   }
 
+  .compare-plans {
+    top: 59px;
+    margin-inline: -6px;
+  }
+
   .brand img {
     width: 40px;
     height: 40px;
   }
 
   .brand span {
-    font-size: 1.18rem;
+    font-size: 1.32rem;
   }
 
   .menu-button {
@@ -1451,6 +1602,15 @@ tbody tr:nth-child(even) td {
   .contact-section,
   .page-band {
     padding: 18px;
+  }
+
+  .hero {
+    margin-top: 18px;
+    padding: 26px 20px;
+  }
+
+  .hero h1 {
+    font-size: clamp(2.75rem, 12vw, 3.5rem);
   }
 
   .cover-copy {

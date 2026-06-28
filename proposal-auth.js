@@ -47,6 +47,29 @@
       .slice(0, 32);
   }
 
+  function setupBackToTopButton() {
+    var button = document.createElement("button");
+
+    button.className = "back-to-top";
+    button.type = "button";
+    button.setAttribute("aria-label", "Back to the top");
+    button.title = "Back to the top";
+    button.innerHTML = '<i class="fa-solid fa-arrow-up" aria-hidden="true"></i><span>Back to the top</span>';
+
+    document.body.appendChild(button);
+
+    function updateButtonVisibility() {
+      button.classList.toggle("is-visible", window.scrollY > 420);
+    }
+
+    button.addEventListener("click", function () {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+
+    window.addEventListener("scroll", updateButtonVisibility, { passive: true });
+    updateButtonVisibility();
+  }
+
   if (!isLoginPage && !hasValidAccess()) {
     var currentPage = page + window.location.search + window.location.hash;
     window.location.replace("login.html?next=" + encodeURIComponent(currentPage));
@@ -68,6 +91,8 @@
           window.location.href = "login.html";
         });
       });
+
+      setupBackToTopButton();
     });
     return;
   }

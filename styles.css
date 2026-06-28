@@ -174,6 +174,10 @@ nav a.active {
   width: 100%;
 }
 
+.back-to-top {
+  display: none;
+}
+
 main {
   width: min(1180px, calc(100% - 32px));
   margin: 0 auto;
@@ -1139,7 +1143,7 @@ tbody tr:nth-child(even) td {
   }
 
   .site-header {
-    position: sticky;
+    position: static;
     align-items: center;
     flex-direction: row;
     justify-content: flex-start;
@@ -1257,6 +1261,51 @@ tbody tr:nth-child(even) td {
 
   .nav-open nav {
     z-index: 39;
+  }
+
+  .back-to-top {
+    position: fixed;
+    right: 18px;
+    bottom: 18px;
+    z-index: 35;
+    display: inline-grid;
+    place-items: center;
+    width: 54px;
+    height: 54px;
+    padding: 0;
+    color: #ffffff;
+    background: var(--brand-dark);
+    border: 0;
+    border-radius: 999px;
+    box-shadow: 0 16px 34px rgba(16, 47, 66, 0.26);
+    cursor: pointer;
+    font: inherit;
+    font-size: 1.05rem;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(10px);
+    transition: opacity 0.18s ease, transform 0.18s ease, background 0.18s ease;
+  }
+
+  .back-to-top span {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+  }
+
+  .back-to-top.is-visible {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+  }
+
+  .back-to-top:hover,
+  .back-to-top:focus-visible {
+    background: var(--brand);
+    outline: none;
   }
 
   .hero,

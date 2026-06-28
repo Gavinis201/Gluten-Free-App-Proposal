@@ -3,36 +3,45 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Standard MVP Proposal | Find Me Gluten Free</title>
-  <meta name="description" content="Standard MVP proposal from Smith Dev for Find Me Gluten Free.">
+  <title>Standard Build Proposal | Website</title>
+  <meta name="description" content="Standard Build production-ready proposal from Smith Dev for the website.">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header class="site-header">
+    <button class="menu-button" type="button" aria-label="Open navigation menu" onclick="document.body.classList.toggle('nav-open')"><i class="fa-solid fa-bars" aria-hidden="true"></i></button>
     <a class="brand" href="index.html" aria-label="Smith Dev home">
       <img src="smithdev logo.png" alt="">
       <span>Smith Dev</span>
     </a>
     <nav aria-label="Package pages">
-      <a href="index.html">Compare</a>
-      <a href="basic.html">Basic</a>
+      <a href="index.html">Home</a>
+      <a href="starter.html">Lean</a>
       <a class="active" href="standard.html">Standard</a>
       <a href="advanced.html">Advanced</a>
+      <div class="settings-menu">
+        <button class="settings-button" type="button" aria-label="Open site options" aria-haspopup="true"><i class="fa-solid fa-gear" aria-hidden="true"></i></button>
+        <div class="settings-dropdown">
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
     </nav>
   </header>
 
   <main class="proposal">
     <section class="cover" aria-labelledby="proposal-title">
+      <button class="pdf-button cover-pdf" type="button" onclick="window.print()"><i class="fa-solid fa-file-pdf" aria-hidden="true"></i> Download PDF</button>
       <div class="cover-copy">
         <div>
           <p class="eyebrow">Smith Dev</p>
-          <h1 id="proposal-title">Standard MVP Proposal</h1>
-          <p class="summary">The recommended first version with account access, payments, contributor approval, reviews, photo uploads, community updates, interactive maps, and full admin content management.</p>
+          <h1 id="proposal-title">Standard Build Proposal</h1>
+          <p class="summary">The recommended production-ready responsive website centered around a custom content management system with owner control over parks, maps, restaurant pins, menu items, reviews, contributor approvals, permissions, and community updates.</p>
         </div>
         <div class="cover-meta" aria-label="Proposal details">
-          <div><span>Prepared For</span><strong>Find Me Gluten Free</strong></div>
+          <div><span>Prepared For</span><strong>The Website</strong></div>
           <div><span>Prepared By</span><strong>Smith Dev</strong></div>
-          <div><span>Estimated Completion</span><strong>October 1, 2026</strong></div>
+          <div><span>Estimated Completion</span><strong>By October 2026*</strong></div>
         </div>
       </div>
       <div class="cover-visual" aria-hidden="true"><div class="brand-panel"><img src="smithdev logo.png" alt=""></div></div>
@@ -40,43 +49,51 @@
 
     <section class="page" aria-labelledby="overview">
       <p class="section-kicker">Project Overview</p>
-      <h2 id="overview">Recommended first version</h2>
-      <p class="lead">The Standard MVP is the complete current proposal scope. It includes the core paid-access platform, user accounts, role-based permissions, contributor approval questions from Anna, restaurant/menu content, interactive park maps, reviews, photo uploads, community update submissions, and full admin content management.</p>
+      <h2 id="overview">Recommended Production-Ready Website</h2>
+      <p class="lead">The Standard Build package is a complete production-ready responsive web application centered around a custom content management system designed specifically for managing gluten-free dining throughout the Disneyland Resort, including parks, maps, restaurant pins, menu items, reviews, contributor approvals, permissions, and community updates.</p>
       <div class="stats">
-        <div class="stat"><span>Fixed Project Price</span><strong>$8,000</strong></div>
-        <div class="stat"><span>Estimated Time</span><strong>171-261 hours</strong></div>
-        <div class="stat"><span>Package Type</span><strong>Recommended MVP</strong></div>
+        <div class="stat"><span>Fixed Project Price</span><strong>$8,500</strong></div>
+        <div class="stat"><span>Package Type</span><strong>Standard Build</strong></div>
       </div>
     </section>
 
     <section class="page" aria-labelledby="features">
       <p class="section-kicker">Included Features</p>
-      <h2 id="features">What is included</h2>
+      <h2 id="features">What Is Included</h2>
       <ul class="feature-grid">
         <li><strong>User authentication:</strong> account creation, secure sign-in, email verification, and forgotten password reset.</li>
+        <li><strong>User settings page:</strong> users can change their password or delete their account.</li>
         <li><strong>Role-based permissions:</strong> access levels for admins, approved contributors, paid users, and general users.</li>
-        <li><strong>Contributor approval questions:</strong> onboarding questions provided by Anna, with admin review before users can review restaurants or upload images.</li>
-        <li><strong>Payment access:</strong> subscription or one-time payment processing with paid-access logic through Stripe or PayPal.</li>
-        <li><strong>Interactive park maps:</strong> custom park maps with editable restaurant pins and gluten-free dining locations.</li>
-        <li><strong>Restaurant and menu pages:</strong> descriptions, hours, photos, prices, gluten-free status, tags, and gluten exposure notes.</li>
-        <li><strong>Search and filters:</strong> search by park, restaurant, and menu item with filters for meal type, dedicated fryer, mobile ordering, and location.</li>
+        <li><strong>Subscription management:</strong> paid member access, user permissions, subscription or one-time payment processing, and automated account emails.</li>
+        <li><strong>Custom Content Management System (CMS):</strong> complete control over parks, maps, restaurant pins, menu items, reviews, contributor approvals, permissions, and community updates.</li>
+        <li><strong>Map and direction features:</strong> custom uploaded park maps with editable restaurant pins, stored latitude/longitude coordinates, visitor phone location when permission is granted, nearby restaurant results, approximate walking distance, and a Get Directions button that opens Google Maps or Apple Maps.</li>
+        <li><strong>Restaurant pages:</strong> restaurant descriptions, hours, distance context, mobile ordering status, dedicated fryer indicator, allergy accommodation notes, and photo galleries.</li>
+        <li><strong>Menu item pages:</strong> item descriptions, ingredients, cross-contamination notes, meal category, gluten-free status, pricing, and multiple images.</li>
+        <li><strong>Search and filters:</strong> search by park, restaurant, and menu item with filters for breakfast, lunch, dinner, snacks, dedicated fryer, mobile ordering, gluten-free only, and location.</li>
+        <li><strong>Reviewer verification:</strong> onboarding questions provided by Anna, with admin review before users can review restaurants or upload images.</li>
+        <li><strong>Saved activity:</strong> users can save favorite restaurants, save favorite menu items, and quickly return to recently viewed content.</li>
         <li><strong>Reviews and photo uploads:</strong> approved contributors can leave ratings, write reviews, upload images, and share gluten-free/celiac context.</li>
-        <li><strong>Community updates:</strong> users can suggest changes or corrections that remain pending until admin approval.</li>
-        <li><strong>Artwork and responsive design:</strong> custom artwork, icons, and layouts for phones, tablets, and desktop computers.</li>
+        <li><strong>Community updates:</strong> users can submit restaurant updates, suggest menu changes, report unavailable menu items, upload photos, and share allergy accommodation experiences for admin approval.</li>
+        <li><strong>Notification email configuration:</strong> setup for automated account emails, including verification and password reset messages.</li>
+        <li><strong>Mobile-first responsive design:</strong> polished layouts for guests using phone, tablet, and desktop browsers while navigating the Disneyland Resort.</li>
+        <li><strong>Artwork and icons:</strong> custom visual assets and interface polish for the production-ready website.</li>
+        <li><strong>Launch setup:</strong> GitHub setup, domain setup through GoDaddy or Cloudflare, hosting setup, and production launch.</li>
       </ul>
     </section>
 
     <section class="page" aria-labelledby="admin">
       <p class="section-kicker">Private Owner Tools</p>
-      <h2 id="admin">Admin Content Management</h2>
+      <h2 id="admin">Standard Build Admin Management Tools</h2>
       <ul class="scope-list">
+        <li><strong>Custom Content Management System (CMS):</strong> complete control over parks, maps, restaurant pins, menu items, reviews, contributor approvals, permissions, and community updates.</li>
+        <li><strong>Purpose-built admin portal:</strong> a custom private owner area built specifically for the website, rather than a generic template.</li>
         <li><strong>Park Management:</strong> create, edit, delete, reorder, and upload park maps.</li>
         <li><strong>Map Management:</strong> place, move, edit, and remove restaurant pins visually on uploaded maps.</li>
         <li><strong>Restaurant Management:</strong> create, edit, archive, and manage restaurant information.</li>
         <li><strong>Menu Management:</strong> create, edit, archive, and organize menu items by restaurant and meal type.</li>
         <li><strong>Review Management:</strong> view, approve, remove, or moderate reviews and uploaded photos.</li>
-        <li><strong>Contributor Approval Management:</strong> review answers to Anna's onboarding questions and approve users before they can post reviews or upload images.</li>
-        <li><strong>Permissions Management:</strong> manage which users can access admin tools, paid content, review posting, image uploads, and contributor-only features.</li>
+        <li><strong>Reviewer Verification Management:</strong> review answers to Anna's onboarding questions, approve contributors, deny contributors, and revoke contributor permissions.</li>
+        <li><strong>Permissions Management:</strong> manage which users can access admin management tools, paid content, review posting, image uploads, and contributor-only features.</li>
         <li><strong>Community Update Management:</strong> approve or reject suggested changes before they appear publicly.</li>
         <li><strong>Account Email Settings:</strong> configure the email address used for account verification and forgotten password messages.</li>
       </ul>
@@ -84,57 +101,47 @@
 
     <section class="page" aria-labelledby="stack">
       <p class="section-kicker">Services and Technical Stack</p>
-      <h2 id="stack">Actual tools and services included</h2>
+      <h2 id="stack">Technical Tools and Services Included</h2>
       <table class="technical-table">
         <thead><tr><th scope="col">Part of the Project</th><th scope="col">Planned Tool or Service</th><th scope="col">What This Means</th></tr></thead>
         <tbody>
-          <tr><td>Guest website</td><td>TypeScript React application</td><td>The public website guests use to search, view maps, read menus, and leave reviews.</td></tr>
-          <tr><td>Website logic and secure data handling</td><td>ASP.NET Core Web API</td><td>The backend service for accounts, permissions, payments, content, reviews, photos, and admin tools.</td></tr>
+          <tr><td>Responsive website / web application</td><td>TypeScript React website</td><td>The public website guests use from desktop, tablet, and mobile browsers to search, view maps, read menus, and leave reviews.</td></tr>
+          <tr><td>Phone home-screen shortcut</td><td>Browser save option</td><td>The website can be saved to a phone home screen for quick access.</td></tr>
+          <tr><td>Website logic and secure data handling</td><td>ASP.NET Core Web API</td><td>The backend service for accounts, permissions, payments, content, reviews, photos, and admin management tools.</td></tr>
           <tr><td>Information storage</td><td>MySQL</td><td>Structured storage for parks, restaurants, menu items, reviews, users, payments, and community updates.</td></tr>
           <tr><td>Photo storage</td><td>AWS S3 or Azure Blob Storage</td><td>Cloud storage for restaurant, menu, and user-uploaded review photos.</td></tr>
           <tr><td>Project file storage</td><td>GitHub</td><td>Professional project storage and version tracking.</td></tr>
           <tr><td>Hosting and domain</td><td>Azure or AWS; GoDaddy or Cloudflare</td><td>Services used to host the website and connect the domain.</td></tr>
           <tr><td>Payment processing</td><td>Stripe or PayPal</td><td>Secure subscription or one-time payment processing.</td></tr>
-        </tbody>
-      </table>
-    </section>
-
-    <section class="page" aria-labelledby="effort">
-      <p class="section-kicker">Estimated Time</p>
-      <h2 id="effort">Where the work will go</h2>
-      <table>
-        <tbody>
-          <tr><td>Private owner tools for updating parks, restaurants, menus, reviews, and photos</td><td>40-60 hours</td></tr>
-          <tr><td>Interactive park maps where restaurant pins can be added, moved, edited, or removed</td><td>30-45 hours</td></tr>
-          <tr><td>Guest reviews, photo uploads, and owner approval tools</td><td>30-40 hours</td></tr>
-          <tr><td>User sign-in, permissions, account verification, contributor approval questions, forgotten password recovery, and payment access setup</td><td>16-26 hours</td></tr>
-          <tr><td>Artwork, responsive design, and interface polish</td><td>30-50 hours</td></tr>
-          <tr><td>Testing and final refinement</td><td>25-40 hours</td></tr>
-          <tr class="total-row"><td><strong>Total Estimated Time</strong></td><td><strong>171-261 hours</strong></td></tr>
+          <tr><td>Native mobile apps</td><td>Not included</td><td>This proposal is for a responsive website / web application. Native iPhone, Android, Apple App Store, and Google Play Store work can be quoted separately as a future phase.</td></tr>
         </tbody>
       </table>
     </section>
 
     <section class="page" aria-labelledby="investment">
       <p class="section-kicker">Project Investment</p>
-      <h2 id="investment">Fixed-price Standard MVP build</h2>
-      <div class="price-band"><div><p>Fixed Project Price</p><strong>Includes planning, design, development, testing, launch, and project management for the Standard MVP scope.</strong></div><div class="price">$8,000</div></div>
+      <h2 id="investment">Fixed-Price Standard Build</h2>
+      <div class="price-band"><div><p>Fixed Project Price</p><strong>Includes planning, design approval, development, testing, launch, and project management for the Standard Build scope.</strong></div><div class="price">$8,500</div></div>
     </section>
 
     <section class="page" aria-labelledby="payment">
       <p class="section-kicker">Payment Schedule</p>
-      <h2 id="payment">Milestone-based payment terms</h2>
+      <h2 id="payment">Milestone-Based Payment Terms</h2>
       <div class="payment">
-        <div class="payment-step"><span>Kickoff</span><strong>35% - $2,800</strong><p>Due prior to project kickoff.</p></div>
-        <div class="payment-step"><span>Halfway Milestone</span><strong>35% - $2,800</strong><p>Due at the halfway project milestone.</p></div>
-        <div class="payment-step"><span>Final Delivery</span><strong>30% - $2,400</strong><p>Due upon final delivery and website launch for the client.</p></div>
+        <div class="payment-step"><span>Kickoff</span><strong>35% - $2,975</strong><p>Due prior to project kickoff.</p></div>
+        <div class="payment-step"><span>Halfway Milestone</span><strong>35% - $2,975</strong><p>Due at the halfway project milestone.</p></div>
+        <div class="payment-step"><span>Final Delivery</span><strong>30% - $2,550</strong><p>Due upon final delivery and website launch for the client.</p></div>
+      </div>
+      <div class="payment-note">
+        <strong>Expectations After Completion</strong>
+        <p>The fixed project price covers the selected Standard Build features listed in this proposal. If additional changes, new features, or expanded functionality are requested outside of the selected build after completion, Smith Dev is happy to continue supporting the project at an hourly rate of $65 per hour.</p>
       </div>
     </section>
 
     <section class="page" aria-labelledby="ongoing-costs">
       <p class="section-kicker">Additional Ongoing Costs Beyond Contract</p>
-      <h2 id="ongoing-costs">Estimated third-party costs after launch</h2>
-      <p class="lead">Third-party costs usually start near the lower end and increase as more users use the app, more photos are uploaded, more emails are sent, and more data is stored.</p>
+      <h2 id="ongoing-costs">Website Upkeep After Launch</h2>
+      <p class="lead">Third-party costs usually start near the lower end and increase as more users use the website, more photos are uploaded, more emails are sent, and more data is stored.</p>
       <table>
         <tbody>
           <tr><td>Website hosting and database</td><td>$25-$100 per month to start</td><td>Paid to Azure or AWS.</td></tr>
@@ -142,9 +149,12 @@
           <tr><td>Domain name</td><td>$10-$25 per year for many standard domains</td><td>Paid to GoDaddy or Cloudflare.</td></tr>
           <tr><td>Notification email sending</td><td>$5-$20 per month to start</td><td>Depends on email volume.</td></tr>
           <tr><td>Payment processing</td><td>Usually a percentage plus a small transaction fee</td><td>Stripe and PayPal fees vary by transaction type.</td></tr>
+          <tr class="total-row"><td><strong>Estimated upkeep total</strong></td><td><strong>$31-$130 per month, plus $10-$25 per year for the domain</strong></td><td><strong>Payment processing fees are separate and depend on transactions.</strong></td></tr>
         </tbody>
       </table>
+      <p class="fine-print">*Estimated completion assumes timely client feedback, approval of milestones, and receipt of required content.</p>
     </section>
+
   </main>
 </body>
 </html>

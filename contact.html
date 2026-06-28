@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact | Smith Dev</title>
+  <meta name="description" content="Contact information for Smith Dev.">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <button class="menu-button" type="button" aria-label="Open navigation menu" onclick="document.body.classList.toggle('nav-open')"><i class="fa-solid fa-bars" aria-hidden="true"></i></button>
+    <a class="brand" href="index.html" aria-label="Smith Dev home">
+      <img src="smithdev logo.png" alt="">
+      <span>Smith Dev</span>
+    </a>
+    <nav aria-label="Package pages">
+      <a href="index.html">Home</a>
+      <a href="starter.html">Lean</a>
+      <a href="standard.html">Standard</a>
+      <a href="advanced.html">Advanced</a>
+      <div class="settings-menu">
+        <button class="settings-button active" type="button" aria-label="Open site options" aria-haspopup="true"><i class="fa-solid fa-gear" aria-hidden="true"></i></button>
+        <div class="settings-dropdown">
+          <a class="active" href="contact.html">Contact</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero contact-hero">
+      <button class="pdf-button" type="button" onclick="window.print()"><i class="fa-solid fa-file-pdf" aria-hidden="true"></i> Download PDF</button>
+      <div class="hero-content">
+        <p class="eyebrow">Smith Dev</p>
+        <h1>Contact</h1>
+        <p class="hero-copy">For questions about this proposal, project scope, timeline, or next steps, please contact Gavin Smith directly.</p>
+        <div class="hero-meta">
+          <div><span>Prepared By</span><strong>Gavin Smith</strong></div>
+          <div><span>Company</span><strong>Smith Dev</strong></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section" aria-labelledby="contact-info">
+      <div class="section-heading">
+        <p class="section-kicker">Contact Information</p>
+        <h2 id="contact-info">Get in Touch</h2>
+      </div>
+
+      <div class="contact-grid">
+        <article class="contact-card">
+          <span>Email</span>
+          <strong><a href="mailto:Gavinjacobsmith@gmail.com">Gavinjacobsmith@gmail.com</a></strong>
+          <p>Best for proposal questions, project details, and written approvals.</p>
+        </article>
+
+        <article class="contact-card">
+          <span>Phone</span>
+          <strong><a href="tel:+18013179660">801 317 9660</a></strong>
+          <p>Best for quick questions, scheduling, and project conversations.</p>
+        </article>
+
+        <article class="contact-card">
+          <span>LinkedIn</span>
+          <strong><a href="https://www.linkedin.com/in/gavinsmith12/" target="_blank" rel="noreferrer">linkedin.com/in/gavinsmith12</a></strong>
+          <p>View professional background, project experience, and development work.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="contact-section" aria-labelledby="about-smith-dev">
+      <div class="section-heading">
+        <p class="section-kicker">Professional Background</p>
+        <h2 id="about-smith-dev">About Smith Dev</h2>
+      </div>
+      <div class="contact-profile">
+        <p>Smith Dev is Gavin Smith's consulting and development firm focused on building custom websites, responsive web applications, admin tools, secure account systems, payment-connected experiences, and polished client-ready digital products.</p>
+        <p>This proposal was prepared to provide clear package options, technical scope, estimated effort, and launch expectations for the custom interactive website project.</p>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

@@ -1335,7 +1335,6 @@ tbody tr:nth-child(even) td {
   .proposal {
     width: 100%;
     margin: 18px auto 42px;
-    overflow: hidden;
   }
 
   .cover {
@@ -1465,7 +1464,7 @@ tbody tr:nth-child(even) td {
 
   .compare-plans {
     position: sticky;
-    top: 65px;
+    top: 0;
     z-index: 8;
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 4px;
@@ -1626,7 +1625,6 @@ tbody tr:nth-child(even) td {
   }
 
   .compare-plans {
-    top: 59px;
     margin-inline: -6px;
   }
 
